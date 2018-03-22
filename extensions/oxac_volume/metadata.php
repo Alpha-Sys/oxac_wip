@@ -29,28 +29,28 @@ $sMetadataVersion = '2.0';
  */
 $aModule = array(
     'id'           => 'oxac_volume',
-    'title'        => 'Volumen Berchnung',
-    'description'  => array(
-        'de' => '',
-        'en' => '',
-    ),
+    'title'        => 'Volumen-Berechnung',
+    'description'  => '',
     'thumbnail'    => 'logo.jpg',
     'version'      => '1.0.0',
-    'author'       => 'OXID Academy',
+    'author'       => 'OXID eSales AG',
     'url'          => 'http://www.oxid-esales.com',
     'email'        => 'info@oxid-esales.com',
     'extend'       => array(
-        \OxidEsales\Eshop\Application\Model\Article::class => \OxidAcademy\VolumeModule\Model\Article::class
+        \OxidEsales\Eshop\Application\Model\Article::class          =>          \OxidAcademy\VolumeModule\Model\Article::class
     ),
     'controllers' => array(
     ),
     'events'       => array(
-        //'onActivate'   => '\OxidEsales\PayPalModule\Core\Events::onActivate',
-        //'onDeactivate' => '\OxidEsales\PayPalModule\Core\Events::onDeactivate'
+//        'onActivate'   => '\OxidEsales\PayPalModule\Core\Events::onActivate',
+//        'onDeactivate' => '\OxidEsales\PayPalModule\Core\Events::onDeactivate'
     ),
     'templates' => array(
     ),
     'blocks' => array(
+        array('template' => 'page/details/inc/productmain.tpl',
+            'block' => 'details_productmain_artnumber',
+            'file' => 'views/blocks/details_productmain_artnumber.tpl')
      ),
     'settings' => array(
     )

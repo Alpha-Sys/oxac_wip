@@ -2,10 +2,15 @@
 
 namespace OxidAcademy\VolumeModule\Model;
 
-class Article extends Article_parent
-{
+class Article extends Article_parent{
 
     public function getVolume(){
-        return "2000";
+        $dLength = $this->oxarticles__oxlength->value;
+        $dWidth = $this->oxarticles__oxwidth->value;
+        $dHeight = $this->oxarticles__oxheight->value;
+
+        $dVolume = $dLength * $dWidth * $dHeight;
+
+        return $dVolume;
     }
 }
