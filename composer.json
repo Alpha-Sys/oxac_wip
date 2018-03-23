@@ -12,7 +12,11 @@
     "oxid-community/moduleinternals": "^1.0",
     "oxid-academy/oxac_volume": "*",
     "oxid-academy/oxac_vouchers":"*",
-    "oxid-academy/oxac_dealer":"*"
+    "oxid-academy/oxac_dealer":"*",
+    "oxid-esales/oxideshop-pe": "^1.0",
+    "oxid-esales/oxideshop-ee": "^1.0",
+    "oxid-esales/oxideshop-demodata-ee": "^1.0",
+    "oxid-academy/oxac_datetime": "*"
   },
   "require-dev": {
     "oxid-esales/testing-library": "^v4.0.0-beta.1",
@@ -68,7 +72,23 @@
     "oxid-academy/oxac_dealer": {
       "type": "path",
       "url": "extensions/oxac_dealer"
+    },
+    "oxid-esales/oxideshop-ee": {
+      "type": "path",
+      "url": "extensions/oxideshop_ee"
+    },
+    "oxid-esales/oxideshop-pe": {
+      "type": "path",
+      "url": "extensions/oxideshop_pe"
+    },
+    "oxid-esales/oxideshop-demodata-ee": {
+      "type": "path",
+      "url": "extensions/oxideshop_demodata_ee"
+    }
+  ,
+    "oxid-academy/oxac_datetime": {
+      "type": "path",
+      "url": "extensions/oxac_datetime"
     }
   }
 }
-
