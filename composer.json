@@ -16,7 +16,8 @@
     "oxid-esales/oxideshop-pe": "^1.0",
     "oxid-esales/oxideshop-ee": "^1.0",
     "oxid-esales/oxideshop-demodata-ee": "^1.0",
-    "oxid-academy/oxac_datetime": "*"
+    "oxid-academy/oxac_datetime": "*",
+    "oxid-academy/oxac_admin": "*"
   },
   "require-dev": {
     "oxid-esales/testing-library": "^v4.0.0-beta.1",
@@ -89,6 +90,10 @@
     "oxid-academy/oxac_datetime": {
       "type": "path",
       "url": "extensions/oxac_datetime"
+    },
+    "oxid-academy/oxac_admin": {
+      "type": "path",
+      "url": "extensions/oxac_admin"
     }
   }
 }
