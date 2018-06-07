@@ -37,6 +37,7 @@ $aModule = array(
     'url'          => 'http://www.oxid-esales.com',
     'email'        => 'info@oxid-esales.com',
     'extend'       => array(
+        \OxidEsales\Eshop\Application\Model\Article::class => \OxidAcademy\VolumeModule\Model\Article::class
     ),
     'controllers' => array(
     ),
