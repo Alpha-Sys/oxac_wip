@@ -16,7 +16,7 @@
  * along with OXID eSales PayPal module.  If not, see <http://www.gnu.org/licenses/>.
  *
  * @link      http://www.oxid-esales.com
- * @copyright (C) OXID eSales AG 2003-2017
+ * @copyright (C) OXID eSales AG 2003-2018
  */
 
 /**
@@ -33,10 +33,11 @@ $aModule = array(
     'description'  => '',
     'thumbnail'    => 'logo.jpg',
     'version'      => '1.0.0',
-    'author'       => 'OXID eSales AG',
-    'url'          => 'http://www.oxid-esales.com',
+    'author'       => 'OXID Academy',
+    'url'          => 'https://www.oxid-esales.com',
     'email'        => 'info@oxid-esales.com',
     'extend'       => array(
+        \OxidEsales\Eshop\Application\Model\Article::class => \OxidAcademy\VolumeModule\Model\Article::class
     ),
     'controllers' => array(
     ),
