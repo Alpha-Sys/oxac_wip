@@ -19,6 +19,11 @@
     "oxid-esales/oxideshop-ide-helper": "^v3.1.1",
     "oxid-esales/azure-theme": "^v1.4.1"
   },
+  "autoload": {
+    "psr-4": {
+      "OxidAcademy\\VoucherModule\\": "./source/modules/oxac/oxac_vouchers"
+    }
+  },
   "autoload-dev": {
     "psr-4": {
       "OxidEsales\\EshopCommunity\\Tests\\": "./vendor/oxid-esales/oxideshop-ce/tests"
